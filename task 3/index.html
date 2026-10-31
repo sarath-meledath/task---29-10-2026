@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Image Gallery</title>
+  </head>
+  <body>
+    <h1>Responsive Image Gallery</h1>
+
+    <!-- Task 3.1: Resolution Switching Gallery -->
+
+    <h2>Image Gallery</h2>
+
+    <!-- Image 1: Hero Banner -->
+    <img
+      src="https://picsum.photos/id/1015/800/500"
+      srcset="https://picsum.photos/id/1015/400/250 400w, https://picsum.photos/id/1015/800/500 800w, https://picsum.photos/id/1015/1200/750 1200w"
+      sizes="(max-width: 600px) 100vw,
+               (max-width: 1200px) 50vw,
+               33vw"
+      alt="Beautiful mountain landscape"
+      width="800"
+      loading="eager" />
+
+    <!-- Image 2 -->
+    <img
+      src="https://picsum.photos/id/1018/800/500"
+      srcset="https://picsum.photos/id/1018/400/250 400w, https://picsum.photos/id/1018/800/500 800w, https://picsum.photos/id/1018/1200/750 1200w"
+      sizes="(max-width: 600px) 100vw,
+               (max-width: 1200px) 50vw,
+               33vw"
+      alt="Mountain scenery"
+      width="800"
+      loading="lazy" />
+
+    <!-- Image 3 -->
+    <img
+      src="https://picsum.photos/id/1019/800/500"
+      srcset="https://picsum.photos/id/1019/400/250 400w, https://picsum.photos/id/1019/800/500 800w, https://picsum.photos/id/1019/1200/750 1200w"
+      sizes="(max-width: 600px) 100vw,
+               (max-width: 1200px) 50vw,
+               33vw"
+      alt="Nature landscape"
+      width="800"
+      loading="lazy" />
+
+    <!-- Image 4 -->
+    <img
+      src="https://picsum.photos/id/1020/800/500"
+      srcset="https://picsum.photos/id/1020/400/250 400w, https://picsum.photos/id/1020/800/500 800w, https://picsum.photos/id/1020/1200/750 1200w"
+      sizes="(max-width: 600px) 100vw,
+               (max-width: 1200px) 50vw,
+               33vw"
+      alt="Forest and trees"
+      width="800"
+      loading="lazy" />
+
+    <!-- Image 5 -->
+    <img
+      src="https://picsum.photos/id/1021/800/500"
+      srcset="https://picsum.photos/id/1021/400/250 400w, https://picsum.photos/id/1021/800/500 800w, https://picsum.photos/id/1021/1200/750 1200w"
+      sizes="(max-width: 600px) 100vw,
+               (max-width: 1200px) 50vw,
+               33vw"
+      alt="Beautiful nature view"
+      width="800"
+      loading="lazy" />
+
+    <!-- Image 6 -->
+    <img
+      src="https://picsum.photos/id/1022/800/500"
+      srcset="https://picsum.photos/id/1022/400/250 400w, https://picsum.photos/id/1022/800/500 800w, https://picsum.photos/id/1022/1200/750 1200w"
+      sizes="(max-width: 600px) 100vw,
+               (max-width: 1200px) 50vw,
+               33vw"
+      alt="Landscape with mountains"
+      width="800"
+      loading="lazy" />
+
+    <!-- Image 7 -->
+    <img
+      src="https://picsum.photos/id/1024/800/500"
+      srcset="https://picsum.photos/id/1024/400/250 400w, https://picsum.photos/id/1024/800/500 800w, https://picsum.photos/id/1024/1200/750 1200w"
+      sizes="(max-width: 600px) 100vw,
+               (max-width: 1200px) 50vw,
+               33vw"
+      alt="Wildlife photograph"
+      width="800"
+      loading="lazy" />
+
+    <!-- Image 8 -->
+    <img
+      src="https://picsum.photos/id/1025/800/500"
+      srcset="https://picsum.photos/id/1025/400/250 400w, https://picsum.photos/id/1025/800/500 800w, https://picsum.photos/id/1025/1200/750 1200w"
+      sizes="(max-width: 600px) 100vw,
+               (max-width: 1200px) 50vw,
+               33vw"
+      alt="Dog portrait"
+      width="800"
+      loading="lazy" />
+
+    <!-- Task 3.2: Art Direction -->
+
+    <h2>Art Direction</h2>
+
+    <!-- Picture 1: Landscape on desktop, square on mobile -->
+    <picture>
+      <source media="(min-width: 800px)" srcset="https://picsum.photos/id/1015/1200/500" />
+      <source media="(max-width: 799px)" srcset="https://picsum.photos/id/1015/600/600" />
+      <img src="https://picsum.photos/id/1015/800/500" alt="Responsive mountain landscape" width="800" loading="lazy" />
+    </picture>
+
+    <!-- Picture 2: Landscape on desktop, square on mobile -->
+    <picture>
+      <source media="(min-width: 800px)" srcset="https://picsum.photos/id/1018/1200/500" />
+      <source media="(max-width: 799px)" srcset="https://picsum.photos/id/1018/600/600" />
+      <img src="https://picsum.photos/id/1018/800/500" alt="Responsive nature landscape" width="800" loading="lazy" />
+    </picture>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video and Captions</title>
+  </head>
+  <body>
+    <h1>Video Player with Captions</h1>
+
+    <video controls width="640" poster="">
+      <!--  MP4 Video Format -->
+      <source src="assets/video.mp4.mp4" type="video/mp4" />
+
+      <!-- OGG Video Format -->
+      <source src="assets/video.ogg" type="video/ogg" />
+
+      <!-- English Captions -->
+      <track src="subtitles.vtt" kind="captions" srclang="en" label="English" />
+
+      Tour browser does not support the video elements.
+    </video>
+
+    <!-- Task 2.2: Audio Player -->
+
+    <audio controls>
+      <source src="" type="audio/mpeg" />
+      <source src="" type="audio/ogg" />
+
+      Your browser does not support the audio elements.
+    </audio>
+
+    <h2>Audio and Video Transcript</h2>
+
+    <details>
+      <summary>Click here to read the transcript</summary>
+
+      <h3>Video Transcript</h3>
+
+      <p>Welcome to our video presentation. Today we are learning about HTML video elements. Captions make videos easier to understand.</p>
+
+      <h3>Audio Transcript</h3>
+
+      <p>Welcome to our audio presentation. This audio demonstrates the HTML audio element. Audio transcripts help users understand spoken content.</p>
+    </details>
+  </body>
+</html>
