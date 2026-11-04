@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tags Demonstration</title>
+
+    <!-- 1. Base tag -->
+    <base href="https://example.com/" />
+  </head>
+  <body>
+    <h1>HTML Tags Demonstration</h1>
+    <p>This webpage demonstrates 30 useful HTML tags.</p>
+
+    <hr />
+
+    <h2>1. Text Formatting Tags</h2>
+
+    <!-- 2. pre -->
+    <h3>Pre Tag</h3>
+    <pre>
+Name: Sarath
+Course: BCA
+Subject: HTML
+    </pre>
+
+    <!-- 3. wbr -->
+    <h3>WBR Tag</h3>
+    <p>ThisIsAVeryLongWordThatMay<wbr />BreakAtThisPosition.</p>
+
+    <!-- 4. mark -->
+    <h3>Mark Tag</h3>
+    <p>HTML is a <mark>important</mark> web development language.</p>
+
+    <!-- 5. del -->
+    <h3>Del Tag</h3>
+    <p>Old Price: <del>₹3,999</del></p>
+
+    <!-- 6. ins -->
+    <h3>Ins Tag</h3>
+    <p>New Price: <ins>₹2,999</ins></p>
+
+    <!-- 7. s -->
+    <h3>S Tag</h3>
+    <p><s>Registration Closed</s> Registration Reopened!</p>
+
+    <!-- 8. code -->
+    <h3>Code Tag</h3>
+    <p>HTML heading example: <code>&lt;h1&gt;Hello&lt;/h1&gt;</code></p>
+
+    <!-- 9. kbd -->
+    <h3>KBD Tag</h3>
+    <p>Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save a file.</p>
+
+    <!-- 10. samp -->
+    <h3>SAMP Tag</h3>
+    <p>Program output: <samp>Hello World!</samp></p>
+
+    <!-- 11. abbr -->
+    <h3>Abbr Tag</h3>
+    <p><abbr title="HyperText Markup Language">HTML</abbr> is used to create webpages.</p>
+
+    <!-- 12. cite -->
+    <h3>Cite Tag</h3>
+    <p>My favourite book is <cite>The Alchemist</cite>.</p>
+
+    <!-- 13. q -->
+    <h3>Q Tag</h3>
+    <p>Steve Jobs once said, <q>Stay hungry, stay foolish.</q></p>
+
+    <!-- 14. blockquote -->
+    <h3>Blockquote Tag</h3>
+    <blockquote>The future belongs to those who believe in the beauty of their dreams.</blockquote>
+
+    <!-- 15. dfn -->
+    <h3>DFN Tag</h3>
+    <p><dfn>HTML</dfn> is the standard markup language for webpages.</p>
+
+    <!-- 16. data -->
+    <h3>Data Tag</h3>
+    <p>Product: <data value="P101">NovaPods Pro</data></p>
+
+    <hr />
+
+    <h2>2. Direction and Ruby Tags</h2>
+
+    <!-- 17. bdi -->
+    <h3>BDI Tag</h3>
+    <p>User: <bdi>محمد</bdi> - Score: 100</p>
+
+    <!-- 18. bdo -->
+    <h3>BDO Tag</h3>
+    <p><bdo dir="rtl">This text is displayed from right to left.</bdo></p>
+
+    <!-- 19, 20, 21. ruby, rt, rp -->
+    <h3>Ruby, RT and RP Tags</h3>
+    <p>
+      <ruby>
+        漢字
+        <rp>(</rp>
+        <rt>かんじ</rt>
+        <rp>)</rp>
+      </ruby>
+    </p>
+
+    <hr />
+
+    <h2>3. Image and Embedded Content Tags</h2>
+
+    <!-- 22 and 23. map and area -->
+    <h3>Image Map</h3>
+    <p>Click the image to visit the example website.</p>
+
+    <img src="https://placehold.co/300x150?text=Click+Me" alt="Clickable image map" usemap="#imagemap" width="300" height="150" />
+
+    <map name="imagemap">
+      <area shape="rect" coords="0,0,300,150" href="https://example.com/" alt="Visit Example" />
+    </map>
+
+    <!-- 24. embed -->
+    <h3>Embed Tag</h3>
+    <embed src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" type="application/pdf" width="300" height="200" />
+
+    <!-- 25. object -->
+    <h3>Object Tag</h3>
+    <object data="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" type="application/pdf" width="300" height="200">PDF cannot be displayed.</object>
+
+    <hr />
+
+    <h2>4. Table Tags</h2>
+
+    <!-- 26. colgroup -->
+    <h3>Colgroup Tag</h3>
+
+    <table border="1">
+      <colgroup>
+        <col />
+        <col />
+        <col />
+      </colgroup>
+
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Subject</th>
+          <th>Marks</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Sarath</td>
+          <td>HTML</td>
+          <td>95</td>
+        </tr>
+        <tr>
+          <td>Rahul</td>
+          <td>CSS</td>
+          <td>90</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+
+    <h2>5. Form and Input Tags</h2>
+
+    <form>
+      <!-- 27. optgroup -->
+      <h3>Optgroup Tag</h3>
+      <label for="course">Select Course:</label>
+
+      <select id="course" name="course">
+        <optgroup label="Programming">
+          <option>HTML</option>
+          <option>CSS</option>
+          <option>JavaScript</option>
+        </optgroup>
+
+        <optgroup label="Database">
+          <option>SQL</option>
+          <option>MongoDB</option>
+        </optgroup>
+      </select>
+
+      <br /><br />
+
+      <!-- 28. datalist -->
+      <h3>Datalist Tag</h3>
+      <label for="browser">Choose Browser:</label>
+
+      <input list="browsers" id="browser" name="browser" />
+
+      <datalist id="browsers">
+        <option value="Google Chrome"></option>
+        <option value="Mozilla Firefox"></option>
+        <option value="Microsoft Edge"></option>
+      </datalist>
+
+      <br /><br />
+
+      <!-- 29. output -->
+      <h3>Output Tag</h3>
+
+      <form oninput="result.value = Number(a.value) + Number(b.value)">
+        <input type="number" id="a" value="10" />
+        +
+        <input type="number" id="b" value="20" />
+        =
+        <output name="result" for="a b">30</output>
+      </form>
+
+      <br />
+
+      <!-- 30. progress -->
+      <h3>Progress Tag</h3>
+      <label for="progress">Course Completion:</label>
+      <progress id="progress" value="70" max="100">70%</progress>
+      <p>70% Completed</p>
+    </form>
+
+    <hr />
+
+    <footer>
+      <p>HTML Tags Demonstration - BCA Assignment</p>
+    </footer>
+  </body>
+</html>
